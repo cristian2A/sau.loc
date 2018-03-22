@@ -35,3 +35,6 @@ Route::get('postulantes/micv', function(){
 Route::get('postulantes/reglamentaciones', function(){
     echo "HOLA REGLAMENTACIONES";
 });
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
